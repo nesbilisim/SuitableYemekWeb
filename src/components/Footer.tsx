@@ -49,7 +49,7 @@ export const Footer = () => {
                     </div>
                     <div className='basis-1/4 flex flex-col gap-y-3'>
                         <h5 className='font-bold text-xl'>İletişim Bilgileri</h5>
-                        <span className='font-semibold'>SUITABLE DİJİTAL PLATFORM HİZMETLERİ ANONİM ŞİRKETİ</span>
+                        <span className='font-semibold'>Suitable Dijital Platform Hizmetleri Anonim Şirketi</span>
 
                         <div className='flex gap-x-2'>
                             <b>E-posta:</b>
@@ -57,8 +57,8 @@ export const Footer = () => {
                         </div>
                         <div className='flex gap-x-2'>
                             <b>Adres:</b>
-                            İÇERENKÖY MAHALLESİ TOPÇU İBRAHİM SOKAK NO:7 DAİRE:6
-                            ATAŞEHİR/İSTANBUL
+                            İçerenköy Mahallesi Topçu İbrahim Sokak No:7 Daire:6
+                            Ataşehir/İstanbul
                         </div>
                     </div>
                     <div className='basis-2/4 flex flex-col gap-y-3'>
@@ -68,15 +68,16 @@ export const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row md:items-center md:justify-between md:gap-0 mb-5'>
+                <div className='flex flex-col md:flex-row md:items-center md:justify-between md:gap-0 mb-5 basis-1/3'>
                     <div className='text-center md:text-start'>
                         Suitable Yemek, Suitable A.Ş. şirketine aittir.
                     </div>
-                    <div className='flex gap-x-5 justify-center items-center'>
+                    <div className='flex gap-x-5 justify-center items-center basis-1/3'>
                         <img src={mastercard} className='w-16 object-contain' />
                         <img src={visa} className='w-16 object-contain' />
                         <img src={payWithIyzico} className='w-32 object-contain' />
                     </div>
+                    <div className='basis-1/3'></div>
                 </div>
             </footer>
             <section className='bg-gray-800 text-white p-5 text-center'>

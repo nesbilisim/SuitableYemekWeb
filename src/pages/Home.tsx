@@ -13,6 +13,9 @@ import kiosk from '@/assets/images/kiosk.png'
 import mockup from '@/assets/images/mockup.png'
 import syKapak2 from '@/assets/images/sy_kapak.png'
 import suitableYemek2 from '@/assets/images/suitableyemek2.png'
+import culinaPatisserie from '@/assets/images/culina-patisserie.png'
+import sauceAndFries from '@/assets/images/sauce-and-fries.png'
+import sakiOcakbasi from '@/assets/images/saki-ocakbasi.png'
 
 export const Home = () => {
 
@@ -25,19 +28,19 @@ export const Home = () => {
                     <div className='text-xl flex flex-col gap-y-3'>
                         <h5 className='font-bold text-2xl mt-8'>Türkiye’nin Yeni 5. Yemek Platformu</h5>
                         <div className='flex items-center gap-x-3'>
-                            <div className='w-3 h-3 bg-black rounded-full'></div> İşletmenizde satış ve servis için gerekli tüm bileşenlere sahip,
+                            <div className='w-3 h-3 bg-black rounded-full'></div> Satış ve servis süreçlerinde ihtiyaç duyduğunuz tüm bileşenleri barındırır.
                         </div>
                         <div className='flex items-center gap-x-3'>
-                            <div className='w-3 h-3 bg-black rounded-full'></div> Ürünlerinizi müşterilerinize ulaştırmanızı sağlayan,
+                            <div className='w-3 h-3 bg-black rounded-full'></div> Ürünlerinizi müşterilerinize hızlı ve etkili bir şekilde ulaştırmanızı sağlar.
                         </div>
                         <div className='flex items-center gap-x-3'>
-                            <div className='w-3 h-3 bg-black rounded-full'></div> Potansiyel müşterileri işletmenize çeken,
+                            <div className='w-3 h-3 bg-black rounded-full'></div> Potansiyel müşterileri işletmenize çekerek müşteri portföyünüzü genişletir.
                         </div>
                         <div className='flex items-center gap-x-3'>
-                            <div className='w-3 h-3 bg-black rounded-full'></div> Size büyük tasarruf sunan,
+                            <div className='w-3 h-3 bg-black rounded-full'></div> Operasyonel maliyetleri azaltarak size önemli ölçüde tasarruf sağlar.
                         </div>
                         <div className='flex items-center gap-x-3'>
-                            <div className='w-3 h-3 bg-black rounded-full'></div> Alışılmış kalıpların ötesinde bir çözüm.
+                            <div className='w-3 h-3 bg-black rounded-full'></div> Alışılmış kalıpların ötesine geçerek yenilikçi bir yaklaşım sunar.
                         </div>
                     </div>
                 </div>
@@ -96,22 +99,22 @@ export const Home = () => {
                     <div className='flex flex-col-reverse gap-y-5 md:flex-row'>
                         <div className='md:basis-1/2 md:p-10 flex flex-col gap-y-3'>
                             <h5 className='font-bold text-2xl'>Neden Suitable Yemek?</h5>
-                            <div>
+                            <div className='text-lg'>
                                 <b>1.</b> Tüm diğer yemek platformları ile entegre POS programı ve yan uygulamalarını sağlayan,
                             </div>
-                            <div>
+                            <div className='text-lg'>
                                 <b>2.</b> Sizi ve işletmenizi özgürleştiren,
                             </div>
-                            <div>
+                            <div className='text-lg'>
                                 <b>3.</b> Üretim ve satış, servis maliyetlerinizi düşüren,
                             </div>
-                            <div>
+                            <div className='text-lg'>
                                 <b>4.</b> Daha ekonomik ürünler sunmanızı ve müşteriye ulaştırmanızı mümkün kılan,
                             </div>
-                            <div>
+                            <div className='text-lg'>
                                 <b>5.</b> İşletmenizi uzaktan hem satış, hem çalışan anlamında yönetmenizi sağlayan,
                             </div>
-                            <div>
+                            <div className='text-lg'>
                                 <b>6.</b> En önemlisi size tüm bu yazılımları ücretsiz ve sınırsız sağlayan tek yemek platformu.
                             </div>
                         </div>
@@ -129,14 +132,13 @@ export const Home = () => {
                                 <h5 className='font-bold text-2xl'>Suitable POS</h5>
                                 <br />
                                 <p className='text-lg'>
-                                    Gelişmiş özellikleri sayesinde internetiniz kesildiğinde bile SuitablePOS'u kullanabilirsiniz. İşlerinizin aksamaması ve işletmenizin iş akışının devam etmesi üzerine kurguya sahip olan SuitablePOS ile 7/24 çalışabilirsiniz.
+                                    Gelişmiş özellikleri sayesinde internetiniz kesildiğinde bile Suitable Yemek'i kullanabilirsiniz. İşlerinizin aksamaması ve işletmenizin iş akışının devam etmesi üzerine kurguya sahip olan Suitable Yemek ile 7/24 çalışabilirsiniz.
                                 </p>
                                 <br />
-                                <div className='flex'>
-                                    <a href="https://suitablepos.com/app" className='border-2 border-orange-500 px-8 py-4 rounded text-orange-500 hover:bg-orange-500 hover:text-white basis-full text-center text-lg' target='_blank'>
-                                        GİRİŞ YAP
-                                    </a>
-                                </div>
+                                <a href="https://suitablepos.com/app" className='border-2 border-orange-500 px-8 py-4 rounded text-orange-500 hover:bg-orange-500 hover:text-white text-center' target='_blank'>
+                                    Kaydol / Giriş Yap
+                                </a>
+
                             </div>
                         </div>
 
@@ -209,6 +211,32 @@ export const Home = () => {
                 <ReviewCard />
             </section> */}
 
+            <section>
+                <h5 className='text-2xl font-bold px-5 mb-5'>Müşteri Yorumları</h5>
+                <section className='flex flex-col md:flex-row gap-x-5 px-5 gap-y-5 md:gap-y-0'>
+
+                    <ReviewCard
+                        image={culinaPatisserie}
+                        title='Bekir Özdoğan'
+                        company='Culina Patisserie'
+                        text='"İşletmemiz büyüdükçe böyle bir sisteme ihtiyaç duyduk ve SuitablePOS ile başladık. Tüm masalarımızı kolayca takip edebiliyoruz, hem basit hem detaylı raporları var. Menüye ürün eklemek, çıkarmak çok pratik. Destek için ulaşmak da çok kolay ve hızlı."' />
+
+                    <ReviewCard
+                        image={sauceAndFries}
+                        title='Hakkan Sevinç'
+                        company='Sauce & Fries'
+                        text='"Online sipariş entegrasyonları sayesinde farklı platformlardan gelen siparişleri tek yerden yönetebiliyorum. Bu da bize ciddi bir zaman tasarrufu sağladı. Müşteri desteği de her zaman yardımcı oluyor, teşekkürler!"'
+                    />
+
+                    <ReviewCard
+                        image={sakiOcakbasi}
+                        title='Saki Ocakbaşı Nevizade'
+                        company='Uğur Kılıçgün'
+                        text='"Online sipariş entegrasyonları sayesinde farklı platformlardan gelen siparişleri tek yerden yönetebiliyorum. Bu da bize ciddi bir zaman tasarrufu sağladı. Müşteri desteği de her zaman yardımcı oluyor, teşekkürler!"'
+                    />
+                </section>
+            </section>
+
             <section className='p-10 flex flex-col gap-y-5'>
                 <h5 className='font-bold text-2xl'>Sıkça Sorulan Sorular</h5>
                 <Accordion
@@ -245,37 +273,21 @@ export const Home = () => {
                     </AccordionItem>
                 </Accordion>
             </section>
-
-            <section className='flex flex-col md:flex-row p-10'>
-                <div className='md:basis-1/2 flex justify-center'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d753.0835300245471!2d29.099770769641463!3d40.97416401075108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac64ecf896b33%3A0xd5499718d37b04c4!2zxLDDp2VyZW5rw7Z5LCBUb3DDp3UgxLBicmFoaW0gU2suIE5vOjcvMTAsIDM0NzUyIEF0YcWfZWhpci_EsHN0YW5idWw!5e0!3m2!1sen!2str!4v1756205777739!5m2!1sen!2str" width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='rounded w-full'></iframe>
-                </div>
-                <div className='md:basis-1/2 md:p-8 flex flex-col gap-y-5 mt-5'>
-                    <h5 className='text-2xl font-bold'>Bize Ulaşın</h5>
-                    <div className='flex gap-x-5'>
-                        <Input placeholder='Ad' className='py-6' />
-                        <Input placeholder='Soyad' className='py-6' />
-                    </div>
-                    <Input placeholder='E-posta' className='py-6' type='email' />
-                    <Textarea placeholder='Mesaj' className='py-6 text-lg' />
-                    <Button className='bg-orange-500 hover:bg-orange-600 cursor-pointer py-6 text-lg'>
-                        Gönder
-                    </Button>
-                </div>
-            </section>
-
-
-
         </React.Fragment>
     )
 }
 
-const ReviewCard = () => {
+const ReviewCard = ({ image, title, company, text }: { image: string, title: string, company: string, text: string }) => {
 
     return (
-        <div>
-            <div className='relative'>
-                <div className='w-50 h-50 rounded shadow-sm bg-gray-100'></div>
+        <div className='basis-1/3  p-8 rounded-3xl shadow-lg text-lg'>
+            <div className='flex gap-x-5'>
+                <img src={image} className='w-16 h-16 object-cover rounded-full' />
+                <div className='flex flex-col gap-y-2'>
+                    <h5 className='font-bold'>{title}</h5>
+                    <h5 className='text-gray-600'>{company}</h5>
+                    <p>{text}</p>
+                </div>
             </div>
         </div>
     )
