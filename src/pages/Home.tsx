@@ -6,13 +6,12 @@ import { Textarea } from '@/components/ui/textarea'
 import { MessageCircle } from 'lucide-react'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import syKapak from '@/assets/images/sy_kapak.jpg'
+import syKapak from '@/assets/images/sy_kapak.jpeg'
 import downloadOnTheAppstore from '@/assets/images/download_on_the_appstore.png'
 import getItOnGooglePlay from '@/assets/images/get_it_on_google_play.png'
 import kiosk from '@/assets/images/kiosk.png'
 import mockup from '@/assets/images/mockup.png'
-import syKapak2 from '@/assets/images/sy_kapak.png'
-import suitableYemek2 from '@/assets/images/suitableyemek2.png'
+import suitableYemek2 from '@/assets/images/suitableyemek2.jpeg'
 import culinaPatisserie from '@/assets/images/culina-patisserie.png'
 import sauceAndFries from '@/assets/images/sauce-and-fries.png'
 import sakiOcakbasi from '@/assets/images/saki-ocakbasi.png'
@@ -45,7 +44,7 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className='basis-1/2'>
-                    <img src={suitableYemek2} className='w-full h-96 object-cover rounded shadow' />
+                    <img src={suitableYemek2} className='w-full h-96 object-cover rounded-lg' />
                 </div>
             </section>
 
@@ -136,7 +135,7 @@ export const Home = () => {
                                 </p>
                                 <br />
                                 <a href="https://suitablepos.com/app" className='border-2 border-orange-500 px-8 py-4 rounded text-orange-500 hover:bg-orange-500 hover:text-white text-center' target='_blank'>
-                                    Kaydol / Giriş Yap
+                                    Giriş Yap / Kayıt Ol
                                 </a>
 
                             </div>
@@ -204,12 +203,6 @@ export const Home = () => {
 
                 </div>}
             </section>
-
-            {/* <section className='flex justify-between'>
-                <ReviewCard />
-                <ReviewCard />
-                <ReviewCard />
-            </section> */}
 
             <section>
                 <h5 className='text-2xl font-bold px-5 mb-5'>Müşteri Yorumları</h5>
