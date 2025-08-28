@@ -6,6 +6,7 @@ import visa from '@/assets/images/visa.png'
 import payWithIyzico from '@/assets/images/pay_with_iyzico.svg'
 import instagram from '@/assets/images/instagram.svg'
 import youtube from '@/assets/images/youtube.svg'
+import x from '@/assets/images/x.svg'
 
 export const Footer = () => {
 
@@ -24,8 +25,11 @@ export const Footer = () => {
                             <img src={youtube} className='w-6 h-6' />
                         </div>
                     </a>
+                    <a href='https://x.com/suitableyemek' target='_blank'>
+                        <img src={x} className='w-6 h-6' />
+                    </a>
                 </div>
-                <div className='flex sm:flex-col md:flex-row gap-x-8 py-8'>
+                <div className='flex flex-col gap-y-5 md:flex-row gap-x-8 py-8'>
                     <div className='basis-1/4 flex flex-col gap-y-5'>
                         <div className='flex flex-col gap-y-1'>
                             <h5 className='font-bold text-xl'>Sözleşmeler</h5>
@@ -59,16 +63,16 @@ export const Footer = () => {
                     </div>
                     <div className='basis-2/4 flex flex-col gap-y-3'>
                         <h5 className='font-bold text-xl'>Hakkımızda</h5>
-                        <p style={{ textIndent: '15px' }}>
+                        <p>
                             Suitable projesi, 2023 yılında pandemi sonrasında potansiyel müşterileri restoranlara getirmek amacıyla Kocaeli Üniversitesi Teknoparkı’nda doğmuştur; ve gelişerek zaman içinde işletmeler ile müşteriler arasında bir köprü haline gelmiştir. Ürettiği çözümler Türkiye’de ve dünya çapında patentlenmiştir. İşletmelerin uçtan uca tüm ihtiyaçlarını tek elden karşılayan bütün bileşenlere sahip olup, gerekli tüm yazılımları ücretsiz olarak sunmaktadır. Suitable, son olarak evrildiği noktada bir yemek platformu olarak yiyecek-içecek sektörüne komple çözüm sunmaktadır.
                         </p>
                     </div>
                 </div>
-                <div className='flex border-t border-gray-200 py-5 items-end justify-between'>
-                    <div className='text-center py-5'>
+                <div className='flex flex-col md:flex-row md:items-center md:justify-between md:gap-0 mb-5'>
+                    <div className='text-center md:text-start'>
                         Suitable Yemek, Suitable A.Ş. şirketine aittir.
                     </div>
-                    <div className='flex gap-x-5 mt-5 justify-center'>
+                    <div className='flex gap-x-5 justify-center items-center'>
                         <img src={mastercard} className='w-16 object-contain' />
                         <img src={visa} className='w-16 object-contain' />
                         <img src={payWithIyzico} className='w-32 object-contain' />

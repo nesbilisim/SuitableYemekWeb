@@ -12,6 +12,7 @@ import getItOnGooglePlay from '@/assets/images/get_it_on_google_play.png'
 import kiosk from '@/assets/images/kiosk.png'
 import mockup from '@/assets/images/mockup.png'
 import syKapak2 from '@/assets/images/sy_kapak.png'
+import suitableYemek2 from '@/assets/images/suitableyemek2.png'
 
 export const Home = () => {
 
@@ -19,7 +20,7 @@ export const Home = () => {
 
     return (
         <React.Fragment>
-            <section className='flex sm:flex-col md:flex-row p-10'>
+            <section className='flex flex-col md:flex-row p-10 gap-y-5'>
                 <div className='basis-1/2 md:p-5'>
                     <div className='text-xl flex flex-col gap-y-3'>
                         <h5 className='font-bold text-2xl mt-8'>Türkiye’nin Yeni 5. Yemek Platformu</h5>
@@ -41,32 +42,33 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className='basis-1/2'>
-                    <img src={syKapak2} className='w-full rounded shadow' />
+                    <img src={suitableYemek2} className='w-full h-96 object-cover rounded shadow' />
                 </div>
             </section>
 
             <section className='p-10'>
                 <div className='flex mb-5 gap-x-5'>
                     <div
-                        className={`basis-1/2 hover:bg-orange-200 hover:cursor-pointer border-b-4 p-8 rounded-t-lg rounded-b text-center text-lg font-bold bg-orange-200 border-b-orange-400 ${selectedTab === 'individual-user' ? 'border-b-orange-800 bg-orange-300' : 'border-b-white'}`}
+                        className={`basis-1/2 text-center border-b-4 border-b-gray-300  hover:bg-gray-50 hover:cursor-pointer p-8 transition-all ${selectedTab === 'individual-user' ? 'border-b-orange-600 bg-orange-300 font-bold' : ''}`}
                         onClick={() => setSelectedTab('individual-user')}
                     >
                         Bireysel Kullanıcı
                     </div>
                     <div
-                        className={`basis-1/2 bg-orange-100 text-center p-8 font-bold rounded-lg hover:cursor-pointer hover:bg-orange-200  ${selectedTab === 'corporate-user' ? 'border-b-orange-800': ''}`}
+                        className={`basis-1/2 text-center border-b-4 border-b-gray-300  hover:bg-gray-50 hover:cursor-pointer p-8 transition-colors ${selectedTab === 'corporate-user' ? 'border-b-orange-600 bg-orange-300 font-bold' : ''}`}
                         onClick={() => setSelectedTab('corporate-user')}
                     >
                         Kurumsal Kullanıcı
                     </div>
                 </div>
 
-                {selectedTab === 'individual-user' && <div className='flex sm:flex-col md:flex-row md:items-center md:gap-x-5'>
+                {selectedTab === 'individual-user' && <div className='flex flex-col md:flex-row md:items-center md:gap-x-5'>
                     <div className='basis-1/2 flex justify-center'>
                         <img src={mockup} className='w-1/2' />
                     </div>
                     <div className='basis-1/2'>
                         <div>
+                            <h5 className='font-bold text-2xl mb-5'>Suitable Yemek</h5>
                             <p className='text-lg'>
                                 SuitableYemek.com ve bireylere yönelik mobil uygulamamız ile, sağlıklı, pratik ve damak tadına uygun yemekleri bir araya getiren modern bir yemek platformudur.
                                 Amacımız; her kullanıcının kendi ihtiyaçlarına, beslenme alışkanlıklarına ve yaşam tarzına en uygun yemekleri kolayca bulmasını sağlamaktır.
@@ -91,7 +93,7 @@ export const Home = () => {
                 </div>}
 
                 {selectedTab === 'corporate-user' && <div className='flex flex-col gap-y-5'>
-                    <div className='flex sm:flex-col md:flex-row'>
+                    <div className='flex flex-col-reverse gap-y-5 md:flex-row'>
                         <div className='md:basis-1/2 md:p-10 flex flex-col gap-y-3'>
                             <h5 className='font-bold text-2xl'>Neden Suitable Yemek?</h5>
                             <div>
@@ -114,12 +116,12 @@ export const Home = () => {
                             </div>
                         </div>
                         <div className='md:basis-1/2'>
-                            <img src={syKapak} className='w-full object-cover rounded shadow' />
+                            <img src={syKapak} className='w-full h-96 object-cover rounded shadow' />
                         </div>
                     </div>
                     <h3 className='font-bol text-3xl font-bold'>Uygulamalarımız</h3>
                     <div className='flex flex-col gap-y-5'>
-                        <div className='flex sm:flex-col md:flex-row'>
+                        <div className='flex flex-col md:flex-row'>
                             <div className='md:basis-1/2'>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/NJQLjP4YyaA?si=Z4amzqNapmJZ29HF" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className='rounded-lg shadow-lg w-full h-96'></iframe>
                             </div>
@@ -138,20 +140,28 @@ export const Home = () => {
                             </div>
                         </div>
 
-                        <div className='flex sm:flex-col md:flex-row'>
+                        <div className='flex flex-col-reverse md:flex-row'>
                             <div className='md:basis-1/2 p-8'>
                                 <h5 className='font-bold text-2xl'>Suitable BOSS</h5>
                                 <br />
-                                <p className='text-lg'> 
+                                <p className='text-lg'>
                                     Genel olarak SuitablePOS'a bağlı olarak çalışan işletme(ler) sahibine, sahip olduğu işletmeler hakkında özet ve detaylı bilgi ve takibini sağlayan bir raporlama uygulamasıdır.
                                 </p>
+                                <div className='flex gap-x-5'>
+                                    <a href='https://apps.apple.com/us/app/suitable-boss/id6504984555' target='_blank'>
+                                        <img src={downloadOnTheAppstore} className='object-contain w-48 h-48' />
+                                    </a>
+                                    <a href='https://play.google.com/store/apps/details?id=com.proaktif.org.suitableboss&hl=en' target='_blank'>
+                                        <img src={getItOnGooglePlay} className='object-contain w-48 h-48' />
+                                    </a>
+                                </div>
                             </div>
                             <div className='md:basis-1/2'>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/2al1CxexdI8?si=1F_eny0NnPWUzTg_" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className='rounded-lg shadow-lg w-full h-96'></iframe>
                             </div>
                         </div>
 
-                        <div className='flex sm:flex-col md:flex-row'>
+                        <div className='flex flex-col md:flex-row'>
                             <div className='md:basis-1/2'>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/1BqiJ1DCMxs?si=IsVYsEL6XdfwOSvM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className='rounded-lg shadow-lg w-full h-96'></iframe>
                             </div>
@@ -165,10 +175,18 @@ export const Home = () => {
                                 <p className='text-lg'>
                                     SuitablePOS ve SuitableBOSS ile entegre çalışarak işletmedeki personelin (garson, şef, temizlikçi, kurye gibi 14 ayrı rolde) görevlendirilmesi, takibi, sevk ve idaresini yapar. Yönetici ve personel arasındaki iletişimi iki yönlü kurar.
                                 </p>
+                                <div className='flex gap-x-5'>
+                                    <a href='https://apps.apple.com/us/app/suitable-employee/id6654914636' target='_blank'>
+                                        <img src={downloadOnTheAppstore} className='object-contain w-48 h-48' />
+                                    </a>
+                                    <a href='https://play.google.com/store/apps/details?id=com.proaktif.suitable_employee&hl=en' target='_blank'>
+                                        <img src={getItOnGooglePlay} className='object-contain w-48 h-48' />
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
-                        <div className='flex sm:flex-col md:flex-row'>
+                        <div className='flex flex-col-reverse md:flex-row'>
                             <div className='md:basis-1/2 p-8'>
                                 <h5 className='font-bold text-2xl'>Suitable Kiosk</h5>
                                 <br />
@@ -190,24 +208,6 @@ export const Home = () => {
                 <ReviewCard />
                 <ReviewCard />
             </section> */}
-
-            <section className='flex sm:flex-col md:flex-row p-10'>
-                <div className='md:basis-1/2 flex justify-center'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d753.0835300245471!2d29.099770769641463!3d40.97416401075108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac64ecf896b33%3A0xd5499718d37b04c4!2zxLDDp2VyZW5rw7Z5LCBUb3DDp3UgxLBicmFoaW0gU2suIE5vOjcvMTAsIDM0NzUyIEF0YcWfZWhpci_EsHN0YW5idWw!5e0!3m2!1sen!2str!4v1756205777739!5m2!1sen!2str" width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='rounded w-full'></iframe>
-                </div>
-                <div className='md:basis-1/2 md:p-8 flex flex-col gap-y-5'>
-                    <h5 className='text-2xl font-bold'>Bize Ulaşın</h5>
-                    <div className='flex gap-x-5'>
-                        <Input placeholder='Ad' className='py-6' />
-                        <Input placeholder='Soyad' className='py-6' />
-                    </div>
-                    <Input placeholder='E-posta' className='py-6' type='email' />
-                    <Textarea placeholder='Mesaj' className='py-6 text-lg' />
-                    <Button className='bg-orange-500 hover:bg-orange-600 cursor-pointer py-6 text-lg'>
-                        Gönder
-                    </Button>
-                </div>
-            </section>
 
             <section className='p-10 flex flex-col gap-y-5'>
                 <h5 className='font-bold text-2xl'>Sıkça Sorulan Sorular</h5>
@@ -245,6 +245,26 @@ export const Home = () => {
                     </AccordionItem>
                 </Accordion>
             </section>
+
+            <section className='flex flex-col md:flex-row p-10'>
+                <div className='md:basis-1/2 flex justify-center'>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d753.0835300245471!2d29.099770769641463!3d40.97416401075108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac64ecf896b33%3A0xd5499718d37b04c4!2zxLDDp2VyZW5rw7Z5LCBUb3DDp3UgxLBicmFoaW0gU2suIE5vOjcvMTAsIDM0NzUyIEF0YcWfZWhpci_EsHN0YW5idWw!5e0!3m2!1sen!2str!4v1756205777739!5m2!1sen!2str" width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='rounded w-full'></iframe>
+                </div>
+                <div className='md:basis-1/2 md:p-8 flex flex-col gap-y-5 mt-5'>
+                    <h5 className='text-2xl font-bold'>Bize Ulaşın</h5>
+                    <div className='flex gap-x-5'>
+                        <Input placeholder='Ad' className='py-6' />
+                        <Input placeholder='Soyad' className='py-6' />
+                    </div>
+                    <Input placeholder='E-posta' className='py-6' type='email' />
+                    <Textarea placeholder='Mesaj' className='py-6 text-lg' />
+                    <Button className='bg-orange-500 hover:bg-orange-600 cursor-pointer py-6 text-lg'>
+                        Gönder
+                    </Button>
+                </div>
+            </section>
+
+
 
         </React.Fragment>
     )
