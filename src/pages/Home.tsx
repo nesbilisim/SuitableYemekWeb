@@ -98,23 +98,26 @@ export const Home = () => {
                     <div className='flex flex-col-reverse gap-y-5 md:flex-row'>
                         <div className='md:basis-1/2 md:p-10 flex flex-col gap-y-3'>
                             <h5 className='font-bold text-2xl'>Neden Suitable Yemek?</h5>
-                            <div className='text-lg'>
-                                <b>1.</b> Tüm diğer yemek platformları ile entegre POS programı ve yan uygulamalarını sağlayan,
+                            <p className='text-lg'>
+                                Yemek sektöründe fark yaratan tek platform:
+                            </p>
+                            <div className='text-lg flex items-center gap-x-3'>
+                                <div className='w-3 h-3 bg-black rounded-full'></div> Tüm diğer yemek platformları ile entegre POS programı ve yan uygulamalarını sağlayan,
                             </div>
-                            <div className='text-lg'>
-                                <b>2.</b> Sizi ve işletmenizi özgürleştiren,
+                            <div className='text-lg flex items-center gap-x-3'>
+                                <div className='w-3 h-3 bg-black rounded-full'></div> Sizi ve işletmenizi özgürleştiren,
                             </div>
-                            <div className='text-lg'>
-                                <b>3.</b> Üretim ve satış, servis maliyetlerinizi düşüren,
+                            <div className='text-lg flex items-center gap-x-3'>
+                                <div className='w-3 h-3 bg-black rounded-full'></div> Üretim ve satış, servis maliyetlerinizi düşüren,
                             </div>
-                            <div className='text-lg'>
-                                <b>4.</b> Daha ekonomik ürünler sunmanızı ve müşteriye ulaştırmanızı mümkün kılan,
+                            <div className='text-lg flex items-center gap-x-3'>
+                                <div className='w-3 h-3 bg-black rounded-full'></div> Daha ekonomik ürünler sunmanızı ve müşteriye ulaştırmanızı mümkün kılan,
                             </div>
-                            <div className='text-lg'>
-                                <b>5.</b> İşletmenizi uzaktan hem satış, hem çalışan anlamında yönetmenizi sağlayan,
+                            <div className='text-lg flex items-center gap-x-3'>
+                                <div className='w-3 h-3 bg-black rounded-full'></div> İşletmenizi uzaktan hem satış, hem çalışan anlamında yönetmenizi sağlayan,
                             </div>
-                            <div className='text-lg'>
-                                <b>6.</b> En önemlisi size tüm bu yazılımları ücretsiz ve sınırsız sağlayan tek yemek platformu.
+                            <div className='text-lg flex items-center gap-x-3'>
+                                <div className='w-3 h-3 bg-black rounded-full'></div> En önemlisi size tüm bu yazılımları ücretsiz ve sınırsız sağlayan tek yemek platformu.
                             </div>
                         </div>
                         <div className='md:basis-1/2'>
