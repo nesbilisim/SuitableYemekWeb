@@ -44,7 +44,13 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className='basis-1/2'>
-                    <img src={suitableYemek2} className='w-full h-96 object-cover rounded-lg' />
+                    <iframe 
+                        className='w-full h-96 rounded-lg shadow-lg'
+                        src="https://www.youtube.com/embed/1I8RZw6EYjQ?si=XaSPAnCSDDlD264X" title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                    ></iframe>
                 </div>
             </section>
 
